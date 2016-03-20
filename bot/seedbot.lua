@@ -162,10 +162,7 @@ function match_plugin(plugin, plugin_name, msg)
       if plugin.run then
         -- If plugin is for privileged users only
         if not warns_user_not_allowed(plugin, msg) then
-          local result = plugin.run(msg, matches)
-          if result then
-            send_large_msg(receiver, result)
-          end
+          local result = pend
         end
       end
       -- One patterns matches
@@ -226,7 +223,7 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {,tonumber(92934971)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -395,8 +392,7 @@ Returns group owner id
 !setowner [id]
 Will set id as owner
 
-!setflood [value]
-Set [value] as flood sensitivity
+ty
 
 !stats
 Simple message statistics
